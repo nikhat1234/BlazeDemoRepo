@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BlazeDemo Automation Suite">
+  
+  <listeners>
+     <listener class-name="com.blazedemo.listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="BlazeDemo Tests">
+   <classes>
+      <class name="com.blazedemo.testcases.HomeTest"/>
+      <class name="com.blazedemo.testcases.ChooseFlightTest"/>
+      <class name="com.blazedemo.testcases.PurchaseFlightTest"/>
+      <class name="com.blazedemo.testcases.PurchaseConfirmationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
